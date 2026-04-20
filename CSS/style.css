@@ -100,8 +100,6 @@ html {
 body {
   overflow-x: hidden;
   background-color: var(--color-bg-primary);
-  font-size: var(--font-md);
-  color: var(--color-text-primary);
   font-family:
     "Pretendard Variable",
     Pretendard,
@@ -118,6 +116,10 @@ body {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
+  font-size: var(--font-md);
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
 }
 ul,
 li {
@@ -128,8 +130,39 @@ a {
   text-decoration: none;
 }
 img {
+  width: 100%;
+  height: 100%;
+  display: block;
   border: 0;
-  vertical-align: middle;
+  object-fit: cover;
+}
+
+/* Typograhy */
+.heading-1 {
+  font-size: var(--font-4xl);
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+}
+.heading-2 {
+  font-size: var(--font-2xl);
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+}
+.heading-3 {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+}
+.body {
+}
+.caption {
+  font-size: var(--font-sm);
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.02em;
 }
 
 /* Component Token */
@@ -148,7 +181,7 @@ img {
   max-width: var(--container-max);
   flex: 1;
   padding: 0 16px;
-  background-color: #d4d4d4;
+  /* background-color: #d4d4d4; */
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -159,4 +192,179 @@ img {
   .container {
     padding: 0 40px;
   }
+}
+
+/* 로그인 */
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 390px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 100px 16px 0px;
+  background-color: #ffffff;
+  gap: 16px;
+}
+
+/* 헤더 */
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+/* 메인 */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* 메인 -> 이메일 + 비밀번호 */
+.input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  padding: 0 16px;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.input img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: var(--font-sm);
+  color: var(--gray-400);
+}
+.input input::placeholder {
+  color: var(--gray-400);
+}
+
+/* 메인 -> 체크박스 */
+.check-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.check-box input {
+  display: none;
+}
+.check-box img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+/* 기본 상태 (check-in 숨김) */
+.check-box img:last-of-type {
+  display: none;
+}
+/* 체크 상태 */
+.check-box input:checked + img {
+  display: none;
+}
+.check-box input:checked + img + img {
+  display: block;
+}
+.check-box .caption {
+  color: var(--gray-800);
+}
+
+/* 메인 -> 로그인 버튼 */
+.btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  background-color: var(--purple-200);
+  color: #ffffff;
+  font-size: var(--font-xl);
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--purple-100);
+}
+
+/* 푸터 */
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+/* 푸터 -> 가입하기 */
+.singup-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.singup-box span {
+  color: var(--gray-500);
+}
+
+.singup-box a {
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+/* 푸터 -> 소셜 로그인 타이틀 */
+.social-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.social-title .line {
+  flex: 1;
+  height: 1px;
+  background-color: var(--gray-200);
+}
+
+.social-title .text {
+  font-size: var(--font-sm);
+  color: var(--gray-500);
+  white-space: nowrap;
+}
+
+/* 푸터 -> 소셜 계정들 */
+.social-list {
+  display: flex;
+  gap: 12px;
+}
+
+.social-btn {
+  flex: 1;
+  height: 98px;
+  border: 1px solid var(--gray-200);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.social-btn img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
