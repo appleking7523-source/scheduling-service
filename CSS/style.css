@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
 /* Design Token */
 :root {
   /* Reference Token */
@@ -100,6 +102,22 @@ body {
   background-color: var(--color-bg-primary);
   font-size: var(--font-md);
   color: var(--color-text-primary);
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    "Helvetica Neue",
+    "Segoe UI",
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 ul,
 li {
@@ -124,26 +142,21 @@ img {
   align-items: center;
   flex-direction: column;
 }
-.outlet {
+.container {
   position: relative;
   width: 100%;
   max-width: var(--container-max);
   flex: 1;
+  padding: 0 16px;
   background-color: #d4d4d4;
 }
-
-@media screen and (min-width: 320px) {
-  .layout {
-    padding: 0 16px;
-  }
-}
 @media screen and (min-width: 768px) {
-  .layout {
+  .container {
     padding: 0 24px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .layout {
-    padding: 0;
+  .container {
+    padding: 0 40px;
   }
 }
