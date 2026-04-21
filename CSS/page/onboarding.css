@@ -1,0 +1,114 @@
+/* 온보딩 1 */
+.onboarding {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 390px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 145px 16px 0px;
+  background-color: #ffffff;
+  gap: 16px;
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.onboarding.fade-out {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+/* 헤더 */
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 16px;
+}
+.header img {
+  width: 120px;
+  height: 120px;
+}
+
+/* 메인 */
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 16px;
+}
+
+/* 메인 -> 텍스트 */
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+/* 메인 -> 버튼 */
+.btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  background-color: var(--purple-200);
+  color: #ffffff;
+  font-size: var(--font-xl);
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--purple-100);
+}
+
+/* 푸터 */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* 건너뛰기 */
+.skip-btn {
+  font-size: 14px;
+  color: #9ca3af;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.skip-btn:hover {
+  color: #6b7280;
+}
+
+.skip-btn:active {
+  opacity: 0.7;
+}
+
+/* 점 묶음 */
+.pagination {
+  display: flex;
+  gap: 10px;
+}
+
+/* 기본 점 */
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 999px;
+  background: #d1d5db;
+}
+
+/* 활성 점 */
+.dot.active {
+  background: #4174e8;
+}

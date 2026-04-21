@@ -1,0 +1,183 @@
+/* 로그인 */
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 390px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 100px 16px 0px;
+  background-color: #ffffff;
+  gap: 16px;
+}
+
+/* 헤더 */
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+/* 메인 */
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+/* 메인 -> 이메일 + 비밀번호 */
+.input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  padding: 0 16px;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.input img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: var(--font-sm);
+  color: var(--gray-400);
+}
+.input input::placeholder {
+  color: var(--gray-400);
+}
+
+/* 메인 -> 체크박스 */
+.check-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.check-box input {
+  display: none;
+}
+.check-box img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+/* 기본 상태 (check-in 숨김) */
+.check-box img:last-of-type {
+  display: none;
+}
+/* 체크 상태 */
+.check-box input:checked + img {
+  display: none;
+}
+.check-box input:checked + img + img {
+  display: block;
+}
+.check-box .caption {
+  color: var(--gray-800);
+}
+
+/* 메인 -> 로그인 버튼 */
+.btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  background-color: var(--purple-200);
+  color: #ffffff;
+  font-size: var(--font-xl);
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--purple-100);
+}
+
+/* 푸터 */
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  gap: 16px;
+}
+
+/* 푸터 -> 가입하기 */
+.singup-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.singup-box span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--gray-400);
+}
+
+.singup-box a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25.6px;
+  color: var(--gray-900);
+}
+
+/* 푸터 -> 소셜 로그인 타이틀 */
+.template-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.template-bar {
+  flex: 1;
+  height: 1px;
+  background-color: var(--gray-300);
+}
+
+.template-name {
+  margin: 0 20px;
+  font-size: 14px;
+  color: var(--gray-500);
+  white-space: nowrap;
+}
+
+/* 푸터 -> 소셜 계정들 */
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+  width: 100%;
+  gap: 16px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 73px;
+  width: 73px;
+  border: 1px solid #e4e4e7;
+  border-radius: 16px;
+}
+
+.social-btn img {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+}
