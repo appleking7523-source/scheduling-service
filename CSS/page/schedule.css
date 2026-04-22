@@ -1,0 +1,243 @@
+/* schedule.css */
+
+.schedule {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  /* padding-top: 24px; */
+}
+
+/* Header */
+
+.schedule-home {
+  width: calc(100% + 32px);
+  margin-right: -16px;
+  margin-left: -16px;
+  padding: 24px 24px 32px;
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  background: linear-gradient(180deg, #5860d8 0%, #3c74ed 100%);
+  color: #fff;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.calendar-title {
+  font-size: var(--font-3xl);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.calendar-nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.nav-btn {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-btn img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.calendar-week {
+  display: grid;
+  margin-bottom: 12px;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-week span {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 14px;
+}
+
+.calendar-grid .empty {
+  width: 100%;
+  height: 36px;
+}
+
+.day {
+  width: 36px;
+  height: 36px;
+  margin: 0 auto;
+  border: 0;
+  background: transparent;
+  font-size: var(--font-lg);
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.day.active {
+  border: 2px solid #fff;
+}
+
+/* Main */
+
+.schedule-main {
+  flex: 1;
+  padding: 12px 0 90px;
+}
+
+.schedule-section {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.schedule-list {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.schedule-item {
+  min-height: 64px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 12px;
+  box-shadow: 0 2px 8px rgba(17, 24, 39, 0.08);
+  background-color: #fff;
+  border-radius: 14px;
+}
+
+.schedule-bar {
+  width: 4px;
+  height: 36px;
+  flex-shrink: 0;
+  background-color: var(--purple-200);
+  border-radius: 999px;
+}
+
+.schedule-content {
+  display: flex;
+  gap: 2px;
+  flex: 1;
+  flex-direction: column;
+}
+
+.schedule-item-title {
+  font-size: var(--font-md);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--gray-900);
+}
+
+.schedule-time {
+  font-size: var(--font-sm);
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--gray-500);
+}
+
+.schedule-thumb {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* 플로팅 버튼 */
+
+.fab-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 88px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  box-shadow: 0 8px 20px rgba(60, 116, 237, 0.28);
+  background-color: var(--purple-200);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.fab-btn img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Footer */
+
+.schedule-footer {
+  width: calc(100% + 32px);
+
+  height: 65px;
+  margin-top: auto;
+  margin-right: -16px;
+  margin-left: -16px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  overflow: hidden;
+  background-color: var(--purple-200);
+}
+
+.nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.nav-item {
+  position: relative;
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 14px;
+}
+
+.nav-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+/* 활성 탭 밑줄 */
+.nav-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  width: 24px;
+  height: 3px;
+  background-color: #fff;
+  transform: translateX(-50%);
+  border-radius: 999px;
+}

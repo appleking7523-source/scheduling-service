@@ -1,24 +1,11 @@
-/* 온보딩 1 */
-.onboarding {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 390px;
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 145px 16px 0px;
-  background-color: #ffffff;
-  gap: 16px;
-  opacity: 1;
-  transform: translateY(0);
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
-}
+/* Onboarding-1 */
 
-.onboarding.fade-out {
-  opacity: 0;
-  transform: translateY(12px);
+.onboarding {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  padding-top: 145px;
 }
 
 /* 헤더 */
