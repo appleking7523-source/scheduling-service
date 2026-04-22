@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>할 일 페이지</title>
+
+    <link rel="stylesheet" href="CSS/basic.css" />
+    <link rel="stylesheet" href="CSS/page/todo.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="container">
+        <div class="todo">
+          <!-- Header -->
+          <header class="todo-header">
+            <div class="search-box">
+              <img src="assets/icons/search.svg" alt="" class="search-icon" />
+              <input type="text" placeholder="검색" />
+            </div>
+
+            <div class="todo-date">
+              <div class="date-left">9월</div>
+
+              <div class="date-right">
+                <span class="date-day">20일</span>
+                <span class="date-year">2026년</span>
+              </div>
+            </div>
+          </header>
+
+          <!-- Main -->
+          <main class="todo-main">
+            <div class="todo-tab">
+              <button type="button" class="tab-btn active">오늘</button>
+              <button type="button" class="tab-btn">이번 주</button>
+              <button type="button" class="tab-btn">이번 달</button>
+            </div>
+
+            <section class="todo-list">
+              <div class="todo-item">
+                <div class="todo-bar"></div>
+
+                <div class="todo-content">
+                  <p class="todo-title">자료구조 강의 듣기</p>
+                  <span class="todo-time">1시간 30분 소요</span>
+                </div>
+
+                <img
+                  src="assets/icons/check-on.svg"
+                  alt=""
+                  class="todo-check"
+                />
+              </div>
+
+              <div class="todo-item">
+                <div class="todo-bar"></div>
+
+                <div class="todo-content">
+                  <p class="todo-title">와이어프레임 제작</p>
+                  <span class="todo-time">1시간 소요</span>
+                </div>
+
+                <img
+                  src="assets/icons/check-on.svg"
+                  alt=""
+                  class="todo-check"
+                />
+              </div>
+
+              <div class="todo-item">
+                <div class="todo-bar"></div>
+
+                <div class="todo-content">
+                  <p class="todo-title">자료구조 강의 듣기</p>
+                  <span class="todo-time">30분 소요</span>
+                </div>
+
+                <img
+                  src="assets/icons/check-off.svg"
+                  alt=""
+                  class="todo-check"
+                />
+              </div>
+            </section>
+          </main>
+
+          <button type="button" class="fab-btn" aria-label="일정 추가">
+            <img src="assets/icons/puls.svg" alt="" />
+          </button>
+
+          <!-- Footer -->
+          <footer class="todo-footer">
+            <nav class="nav">
+              <a href="#" class="nav-item" aria-label="홈">
+                <img src="assets/icons/home.svg" alt="" class="nav-icon" />
+                <span class="nav-indicator"></span>
+              </a>
+
+              <a href="#" class="nav-item" aria-label="캘린더">
+                <img src="assets/icons/schedule.svg" alt="" class="nav-icon" />
+              </a>
+
+              <a href="#" class="nav-item active" aria-label="할 일">
+                <img src="assets/icons/todo.svg" alt="" class="nav-icon" />
+              </a>
+
+              <a href="#" class="nav-item" aria-label="마이페이지">
+                <img src="assets/icons/user.svg" alt="" class="nav-icon" />
+              </a>
+            </nav>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

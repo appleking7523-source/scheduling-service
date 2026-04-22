@@ -1,14 +1,10 @@
 /* 로그인 */
 .login {
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  max-width: 390px;
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 100px 16px 0px;
-  background-color: #ffffff;
+  display: flex;
   gap: 16px;
+  flex-direction: column;
+  padding-top: 100px;
 }
 
 /* 헤더 */

@@ -1,0 +1,264 @@
+/* Todo.css */
+
+.todo {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+/* Header */
+
+.todo-header {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.search-box {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 0 16px;
+  box-shadow: 0 2px 8px rgba(17, 24, 39, 0.08);
+  background-color: #fff;
+
+  border-radius: 14px;
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.search-box input {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+
+  font-size: var(--font-sm);
+  color: var(--gray-900);
+}
+
+.search-box input::placeholder {
+  color: var(--gray-500);
+}
+
+.todo-date {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.date-left {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--purple-200);
+}
+
+.date-right {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6px;
+}
+
+.date-day {
+  font-size: var(--font-md);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--gray-900);
+}
+
+.date-year {
+  font-size: var(--font-md);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--gray-900);
+}
+
+/* Main */
+
+.todo-main {
+  display: flex;
+  gap: 16px;
+  flex: 1;
+  flex-direction: column;
+  padding-bottom: 90px;
+}
+
+.todo-tab {
+  display: flex;
+  gap: 32px;
+  justify-content: flex-start;
+  padding: 0 4px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.tab-btn {
+  position: relative;
+  padding: 0 0 12px;
+  border: 0;
+  background: transparent;
+
+  font-size: var(--font-2xl);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--gray-400);
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  color: var(--purple-200);
+}
+
+.tab-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 100%;
+  height: 3px;
+  background-color: var(--purple-200);
+  transform: translateX(-50%);
+  border-radius: 999px;
+}
+
+.todo-list {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.todo-item {
+  min-height: 60px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 14px 12px;
+  box-shadow: 0 2px 8px rgba(17, 24, 39, 0.08);
+  background-color: #fff;
+
+  border-radius: 10px;
+}
+
+.todo-bar {
+  width: 4px;
+  height: 38px;
+  flex-shrink: 0;
+  background-color: var(--purple-200);
+  border-radius: 999px;
+}
+
+.todo-content {
+  display: flex;
+  gap: 2px;
+  flex: 1;
+  flex-direction: column;
+}
+
+.todo-title {
+  font-size: var(--font-lg);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--gray-900);
+}
+
+.todo-time {
+  font-size: var(--font-sm);
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--gray-400);
+}
+
+.todo-check {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* 플로팅 버튼 */
+
+.fab-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 88px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  box-shadow: 0 8px 20px rgba(60, 116, 237, 0.28);
+  background-color: var(--purple-200);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.fab-btn img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Footer */
+
+.todo-footer {
+  width: calc(100% + 32px);
+
+  height: 65px;
+  margin-top: auto;
+  margin-right: -16px;
+  margin-left: -16px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  overflow: hidden;
+  background-color: var(--purple-200);
+}
+
+.nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.nav-item {
+  position: relative;
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 14px;
+}
+
+.nav-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+/* 활성 탭 밑줄 */
+.nav-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  width: 24px;
+  height: 3px;
+  background-color: #fff;
+  transform: translateX(-50%);
+  border-radius: 999px;
+}

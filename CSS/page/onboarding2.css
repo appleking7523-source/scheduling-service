@@ -1,14 +1,11 @@
-/* 온보딩 1 */
+/* Onboarding*/
+
 .onboarding {
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  max-width: 390px;
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 145px 16px 0px;
-  background-color: #ffffff;
+  display: flex;
   gap: 16px;
+  flex-direction: column;
+  padding-top: 145px;
 }
 
 /* 헤더 */
