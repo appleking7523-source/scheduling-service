@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>홈 화면 페이지</title>
+
+    <link rel="stylesheet" href="CSS/basic.css" />
+    <link rel="stylesheet" href="CSS/page/home.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="container">
+        <div class="home">
+          <!-- Header -->
+          <header class="home-header">
+            <div class="title">
+              <h1 class="heading-1">오늘 뭐할까?</h1>
+              <p class="caption">2026년 9월 20일 (월요일)</p>
+            </div>
+
+            <div class="progress-box">
+              <div class="progress-text">
+                <span class="label">하루 진행률</span>
+                <span class="percent">90</span>
+                <span class="unit">%</span>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </header>
+
+          <!-- Main -->
+          <main class="home-main">
+            <!-- 상단 카드 영역 -->
+            <section class="summary">
+              <div class="d-day-card">
+                <div class="d-day-text">
+                  <p class="d-day">D-22</p>
+                  <p class="d-day-date">2026.10.12</p>
+                  <p class="birthday">생일</p>
+                </div>
+
+                <img
+                  src="assets/icons/cake.png"
+                  alt="생일 케이크"
+                  class="cake-img"
+                />
+              </div>
+
+              <div class="calendar-card">
+                <img
+                  src="assets/icons/calendar.png"
+                  alt="9월 달력"
+                  class="calendar-img"
+                />
+              </div>
+            </section>
+
+            <!-- 오늘 할 일 -->
+            <section class="todo">
+              <div class="section-header">
+                <h2 class="heading-2">오늘 할 일</h2>
+                <img
+                  src="assets/icons/arrow-right.svg"
+                  alt=""
+                  class="section-arrow"
+                />
+              </div>
+
+              <ul class="todo-list">
+                <li class="todo-item">
+                  <span class="todo-text">자료구조 강의 듣기</span>
+                  <img
+                    src="assets/icons/check-in.svg"
+                    alt=""
+                    class="check-icon"
+                  />
+                </li>
+
+                <li class="todo-item">
+                  <span class="todo-text">와이어프레임 제작</span>
+                  <img
+                    src="assets/icons/check-in.svg"
+                    alt=""
+                    class="check-icon"
+                  />
+                </li>
+
+                <li class="todo-item">
+                  <span class="todo-text">코딩 연습</span>
+                  <img
+                    src="assets/icons/check-out.svg"
+                    alt=""
+                    class="check-icon"
+                  />
+                </li>
+              </ul>
+            </section>
+
+            <!-- 오늘 일정 -->
+            <section class="schedule">
+              <div class="section-header">
+                <h2 class="heading-2">오늘 일정</h2>
+                <img
+                  src="assets/icons/arrow-right.svg"
+                  alt=""
+                  class="section-arrow"
+                />
+              </div>
+
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <div class="left-bar"></div>
+
+                  <div class="schedule-content">
+                    <p class="schedule-title">공부</p>
+                    <span class="schedule-time">오후 2시 - 오후 5시</span>
+                  </div>
+
+                  <img
+                    src="assets/icons/study.png"
+                    alt=""
+                    class="schedule-img"
+                  />
+                </div>
+
+                <div class="schedule-item">
+                  <div class="left-bar"></div>
+
+                  <div class="schedule-content">
+                    <p class="schedule-title">단체 모임</p>
+                    <span class="schedule-time">오후 6시 - 오후 8시</span>
+                  </div>
+
+                  <img
+                    src="assets/icons/meeting.png"
+                    alt=""
+                    class="schedule-img"
+                  />
+                </div>
+
+                <div class="schedule-item">
+                  <div class="left-bar"></div>
+
+                  <div class="schedule-content">
+                    <p class="schedule-title">술 약속</p>
+                    <span class="schedule-time">오후 9시 - 오후 11시</span>
+                  </div>
+
+                  <img
+                    src="assets/icons/meeting.png"
+                    alt=""
+                    class="schedule-img"
+                  />
+                </div>
+              </div>
+            </section>
+          </main>
+
+          <!-- Footer -->
+          <footer class="home-footer">
+            <nav class="nav">
+              <a href="#" class="nav-item active" aria-label="홈">
+                <img src="assets/icons/home.svg" alt="" class="nav-icon" />
+                <span class="nav-indicator"></span>
+              </a>
+
+              <a href="#" class="nav-item" aria-label="캘린더">
+                <img src="assets/icons/schedule.svg" alt="" class="nav-icon" />
+              </a>
+
+              <a href="#" class="nav-item" aria-label="할 일">
+                <img src="assets/icons/todo.svg" alt="" class="nav-icon" />
+              </a>
+
+              <a href="#" class="nav-item" aria-label="마이페이지">
+                <img src="assets/icons/user.svg" alt="" class="nav-icon" />
+              </a>
+            </nav>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
