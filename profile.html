@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>프로필 페이지</title>
+
+    <link rel="stylesheet" href="CSS/basic.css" />
+    <link rel="stylesheet" href="CSS/page/profile.css" />
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <div class="layout">
@@ -12,7 +16,7 @@
           <!-- Header -->
           <header class="profile-header">
             <button class="back-btn">
-              <img src="assets/icons/arrow-left.svg" alt="" />
+              <img src="assets/icons/back-arrow.svg" alt="" />
             </button>
             <h1 class="heading-2">프로필</h1>
           </header>
@@ -32,12 +36,12 @@
             <!-- 통계 -->
             <section class="profile-card">
               <div class="profile-item">
-                <img src="assets/icons/chart.svg" alt="" />
+                <img src="assets/icons/1].svg" alt="" />
                 <span>하루 진행률 90%</span>
               </div>
 
               <div class="profile-item">
-                <img src="assets/icons/check.svg" alt="" />
+                <img src="assets/icons/2].svg" alt="" />
                 <span>완료한 할 일 12개</span>
               </div>
             </section>
@@ -45,29 +49,53 @@
             <!-- 메뉴 -->
             <section class="profile-card">
               <div class="profile-menu">
-                <img src="assets/icons/notice.svg" alt="" />
+                <img src="assets/icons/3].svg" alt="" />
                 <span>공지사항</span>
               </div>
 
               <div class="profile-menu">
-                <img src="assets/icons/help.svg" alt="" />
+                <img src="assets/icons/4].svg" alt="" />
                 <span>문의사항</span>
               </div>
 
               <div class="profile-menu">
-                <img src="assets/icons/setting.svg" alt="" />
+                <img src="assets/icons/5].svg" alt="" />
                 <span>설정</span>
               </div>
             </section>
 
             <!-- 로그아웃 -->
-            <section class="logout-box">
+            <section class="logout-box" id="logoutBtn">
+              <img src="assets/icons/6].svg" alt="" />
               <span>로그아웃</span>
             </section>
           </main>
 
           <!-- Footer -->
-          <footer class="profile-footer"></footer>
+          <footer class="profile-footer">
+            <nav class="nav">
+              <a href="home.html" class="nav-item" aria-label="홈">
+                <img src="assets/icons/home.svg" alt="" class="nav-icon" />
+                <span class="nav-indicator"></span>
+              </a>
+
+              <a href="schedule.html" class="nav-item" aria-label="캘린더">
+                <img src="assets/icons/schedule.svg" alt="" class="nav-icon" />
+              </a>
+
+              <a href="todo.html" class="nav-item" aria-label="할 일">
+                <img src="assets/icons/todo.svg" alt="" class="nav-icon" />
+              </a>
+
+              <a
+                href="profile.html"
+                class="nav-item active"
+                aria-label="마이페이지"
+              >
+                <img src="assets/icons/user.svg" alt="" class="nav-icon" />
+              </a>
+            </nav>
+          </footer>
         </div>
       </div>
     </div>
