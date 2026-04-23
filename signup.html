@@ -21,7 +21,7 @@
 
           <!-- 메인 -->
           <main class="main">
-            <form class="signup-wrapper">
+            <form id="signupForm" class="signup-wrapper">
               <!-- 이메일 -->
               <div class="form-group">
                 <label>이메일 <span class="required">*</span></label>
@@ -60,7 +60,9 @@
           <!-- 푸터 -->
           <footer class="footer">
             <!-- 회원가입 버튼 -->
-            <button type="submit" class="btn">이메일로 회원가입</button>
+            <button type="submit" form="signupForm" class="btn">
+              이메일로 회원가입
+            </button>
           </footer>
         </div>
       </div>
