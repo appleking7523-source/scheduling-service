@@ -61,19 +61,19 @@
 .profile-user {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 8px;
   padding: 0 4px 16px;
   border-bottom: 1px solid #bdbdbd;
 }
 
 .avatar {
-  width: 76px;
-  height: 76px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: linear-gradient(135deg, #6b5df6, #63c7f7);
   color: #fff;
-  font-size: 34px;
-  font-weight: 700;
+  font-size: 48px;
+  font-weight: 500;
   line-height: 1;
   display: flex;
   justify-content: center;
@@ -85,21 +85,21 @@
 .user-info {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  /* gap: 4px; */
 }
 
 .user-name {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 700;
-  color: #111;
+  font-size: var(--font-2xl);
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.02em;
 }
 
 .user-email {
-  margin: 0;
-  font-size: 14px;
+  font-size: var(--font-sm);
   font-weight: 400;
-  color: #8d8d8d;
+  line-height: 20px;
+  letter-spacing: -0.02em;
 }
 
 /* 카드 공통 */
@@ -117,7 +117,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 9px 12px;
+  padding: 12px 12px;
 }
 
 .profile-item:not(:last-child),
@@ -138,7 +138,7 @@
   font-size: 16px;
   font-weight: 400;
   color: #222;
-  line-height: 1.4;
+  /* line-height: 1.4; */
 }
 
 /* 메뉴 버튼 초기화 */
@@ -159,7 +159,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 12px;
+  padding: 12px 12px;
   border: 1px solid #bdbdbd;
   border-radius: 12px;
   background-color: #f8f8f8;

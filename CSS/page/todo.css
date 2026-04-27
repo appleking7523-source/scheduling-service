@@ -21,7 +21,7 @@
   width: 100%;
   height: 44px;
   display: flex;
-  gap: 8px;
+  gap: 2px;
   align-items: center;
   padding: 0 16px;
   box-shadow: 0 2px 8px rgba(17, 24, 39, 0.08);
@@ -31,8 +31,8 @@
 }
 
 .search-icon {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   flex-shrink: 0;
   object-fit: contain;
 }

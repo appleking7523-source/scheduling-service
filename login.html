@@ -13,71 +13,83 @@
     <div class="layout">
       <div class="container">
         <div class="login">
-          <!-- 헤더 -->
-          <header class="header">
-            <h1 class="heading-1">로그인</h1>
-            <p class="body">로그인을 하실려면 정보를 입력하세요.</p>
-          </header>
+          <!-- 데스크탑 왼쪽 이미지 -->
+          <div class="login-visual">
+            <img src="assets/icons/home.png" alt="" />
+          </div>
 
-          <!-- 메인 -->
-          <main class="main">
-            <form class="login-wrapper">
-              <!-- 이메일 -->
-              <div class="input">
-                <img src="assets/icons/email.svg" alt="" class="email" />
-                <input type="email" placeholder="whattodo@gmail.com" />
+          <!-- 로그인 영역 -->
+          <div class="login-content">
+            <!-- Header -->
+            <header class="header">
+              <h1 class="heading-1">로그인</h1>
+              <p class="body">로그인을 하실려면 정보를 입력하세요.</p>
+            </header>
+
+            <!-- Main -->
+            <main class="main">
+              <form class="login-wrapper">
+                <!-- 이메일 -->
+                <div class="input">
+                  <img src="assets/icons/email.svg" alt="" class="email" />
+                  <input type="email" placeholder="whattodo@gmail.com" />
+                </div>
+
+                <!-- 비밀번호 -->
+                <div class="input">
+                  <img
+                    src="assets/icons/password.svg"
+                    alt=""
+                    class="password"
+                  />
+                  <input type="password" placeholder="비밀번호 입력" />
+                </div>
+
+                <!-- 체크박스 -->
+                <label class="check-box">
+                  <input type="checkbox" />
+                  <img src="assets/icons/check-out.svg" alt="" />
+                  <img src="assets/icons/check-in.svg" alt="" />
+                  <span class="caption">로그인 상태 유지</span>
+                </label>
+
+                <!-- 로그인 버튼 -->
+                <button type="submit" class="btn">로그인</button>
+              </form>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+              <!-- 가입하기 버튼 -->
+              <div class="singup-box">
+                <span>계정이 없으신가요?</span>
+                <a href="signup.html">가입하기</a>
               </div>
 
-              <!-- 비밀번호 -->
-              <div class="input">
-                <img src="assets/icons/password.svg" alt="" class="password" />
-                <input type="password" placeholder="비밀번호 입력" />
+              <!-- 소셜 계정 제목 -->
+              <div class="template-container">
+                <div class="template-bar"></div>
+                <div class="template-name">소셜 계정으로 로그인</div>
+                <div class="template-bar"></div>
               </div>
 
-              <!-- 체크박스 -->
-              <label class="check-box">
-                <input type="checkbox" />
-                <img src="assets/icons/check-out.svg" alt="" />
-                <img src="assets/icons/check-in.svg" alt="" />
-                <span class="caption">로그인 상태 유지</span>
-              </label>
-
-              <!-- 로그인 버튼 -->
-              <button type="submit" class="btn">로그인</button>
-            </form>
-          </main>
-
-          <!-- 푸터 -->
-          <footer class="footer">
-            <!-- 가입하기 버튼 -->
-            <div class="singup-box">
-              <span>계정이 없으신가요?</span>
-              <a href="signup.html">가입하기</a>
-            </div>
-
-            <!-- 소셜 계정 제목 -->
-            <div class="template-container">
-              <div class="template-bar"></div>
-              <div class="template-name">소셜 계정으로 로그인</div>
-              <div class="template-bar"></div>
-            </div>
-
-            <!-- 소셜 계정 리스트 -->
-            <div class="social-list">
-              <a href="#" class="social-btn">
-                <img src="assets/icons/naver.png" alt="Naver" />
-              </a>
-              <a href="#" class="social-btn">
-                <img src="assets/icons/kakaotalk.png" alt="KaKaoTalk" />
-              </a>
-              <a href="#" class="social-btn">
-                <img src="assets/icons/google.png" alt="Google" />
-              </a>
-              <a href="#" class="social-btn">
-                <img src="assets/icons/apple.png" alt="Apple" />
-              </a>
-            </div>
-          </footer>
+              <!-- 소셜 계정 리스트 -->
+              <div class="social-list">
+                <a href="#" class="social-btn">
+                  <img src="assets/icons/naver.png" alt="Naver" />
+                </a>
+                <a href="#" class="social-btn">
+                  <img src="assets/icons/kakaotalk.png" alt="KaKaoTalk" />
+                </a>
+                <a href="#" class="social-btn">
+                  <img src="assets/icons/google.png" alt="Google" />
+                </a>
+                <a href="#" class="social-btn">
+                  <img src="assets/icons/apple.png" alt="Apple" />
+                </a>
+              </div>
+            </footer>
+          </div>
         </div>
       </div>
     </div>
