@@ -7,6 +7,17 @@
   padding-top: 100px;
 }
 
+.login-visual {
+  display: none;
+}
+
+.login-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 /* 헤더 */
 .header {
   display: flex;
@@ -176,4 +187,56 @@
   width: 34px;
   height: 34px;
   border-radius: 8px;
+}
+
+/* 데스크탑 전용 css */
+
+@media screen and (min-width: 1024px) {
+  .layout {
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 640px;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .login-visual {
+    display: block;
+    width: 100%;
+    max-width: 540px;
+  }
+
+  .login-visual img {
+    width: 100%;
+    height: 620px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .login-content {
+    width: 360px;
+  }
+
+  .social-btn {
+    height: 58px;
+    border-radius: 12px;
+  }
+
+  .social-btn img {
+    width: 28px;
+    height: 28px;
+  }
 }

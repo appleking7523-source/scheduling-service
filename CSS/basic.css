@@ -181,7 +181,6 @@ img {
   max-width: var(--container-max);
   flex: 1;
   padding: 0 16px;
-  /* background-color: #d4d4d4; */
 }
 @media screen and (min-width: 768px) {
   .container {
