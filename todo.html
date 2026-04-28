@@ -15,17 +15,39 @@
         <div class="todo">
           <!-- Header -->
           <header class="todo-header">
-            <div class="search-box">
-              <img src="assets/icons/search.svg" alt="" class="search-icon" />
-              <input type="text" placeholder="검색" />
+            <div class="todo-top">
+              <div class="search-box">
+                <img src="assets/icons/search.svg" alt="" class="search-icon" />
+                <input type="text" placeholder="검색" />
+              </div>
+
+              <div class="header-icons">
+                <img src="assets/icons/bell.svg" alt="" />
+                <img src="assets/icons/setting.svg" alt="" />
+              </div>
             </div>
 
-            <div class="todo-date">
-              <div class="date-left">9월</div>
+            <div class="todo-info">
+              <div class="todo-date">
+                <div class="date-left">9월</div>
 
-              <div class="date-right">
-                <span class="date-day">20일</span>
-                <span class="date-year">2026년</span>
+                <div class="date-right">
+                  <span class="date-day">20일</span>
+                  <span class="date-year">2026년</span>
+                </div>
+              </div>
+
+              <div class="progress-card">
+                <strong class="progress-title">오늘 진행률</strong>
+
+                <div class="progress-content">
+                  <div class="progress-circle">2/3</div>
+
+                  <div class="progress-text">
+                    <span>전체 3개 중</span>
+                    <strong>2개 완료</strong>
+                  </div>
+                </div>
               </div>
             </div>
           </header>
@@ -36,6 +58,19 @@
               <button type="button" class="tab-btn active">오늘</button>
               <button type="button" class="tab-btn">이번 주</button>
               <button type="button" class="tab-btn">이번 달</button>
+            </div>
+
+            <div class="todo-filter">
+              <div class="filter-left">
+                <button type="button" class="filter-btn active">전체</button>
+                <button type="button" class="filter-btn">진행 중</button>
+                <button type="button" class="filter-btn">완료</button>
+              </div>
+
+              <button type="button" class="sort-btn">
+                등록순
+                <span>⌄</span>
+              </button>
             </div>
 
             <section class="todo-list">

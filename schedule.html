@@ -13,125 +13,158 @@
     <div class="layout">
       <div class="container">
         <div class="schedule">
-          <!-- Header -->
-          <header class="schedule-home">
-            <div class="calendar-header">
-              <h1 class="calendar-title">9월 2026</h1>
+          <aside class="schedule-side">
+            <!-- 작은 달력 카드 -->
+            <div class="mini-calendar">
+              <div class="calendar-header">
+                <span>9월 2026</span>
+              </div>
 
-              <div class="calendar-nav">
-                <button type="button" class="nav-btn" aria-label="이전 달">
-                  <img src="assets/icons/prev.svg" alt="" />
-                </button>
-                <button type="button" class="nav-btn" aria-label="다음 달">
-                  <img src="assets/icons/Next.svg" alt="" />
-                </button>
+              <div class="calendar-grid">
+                <span>1</span><span>2</span><span>3</span> <span>4</span
+                ><span>5</span>
               </div>
             </div>
 
-            <div class="calendar-week">
-              <span>일</span>
-              <span>월</span>
-              <span>화</span>
-              <span>수</span>
-              <span>목</span>
-              <span>금</span>
-              <span>토</span>
-            </div>
+            <!-- 오늘 할 일 -->
+            <section class="todo">
+              <h2 class="heading-2">오늘 할 일</h2>
 
-            <div class="calendar-grid">
-              <span class="empty"></span>
-              <span class="empty"></span>
-
-              <button type="button" class="day">1</button>
-              <button type="button" class="day">2</button>
-              <button type="button" class="day">3</button>
-              <button type="button" class="day">4</button>
-              <button type="button" class="day">5</button>
-
-              <button type="button" class="day">6</button>
-              <button type="button" class="day">7</button>
-              <button type="button" class="day">8</button>
-              <button type="button" class="day">9</button>
-              <button type="button" class="day">10</button>
-              <button type="button" class="day">11</button>
-              <button type="button" class="day">12</button>
-
-              <button type="button" class="day">13</button>
-              <button type="button" class="day">14</button>
-              <button type="button" class="day">15</button>
-              <button type="button" class="day">16</button>
-              <button type="button" class="day">17</button>
-              <button type="button" class="day">18</button>
-              <button type="button" class="day">19</button>
-
-              <button type="button" class="day active">20</button>
-              <button type="button" class="day">21</button>
-              <button type="button" class="day">22</button>
-              <button type="button" class="day">23</button>
-              <button type="button" class="day">24</button>
-              <button type="button" class="day">25</button>
-              <button type="button" class="day">26</button>
-
-              <button type="button" class="day">27</button>
-              <button type="button" class="day">28</button>
-              <button type="button" class="day">29</button>
-              <button type="button" class="day">30</button>
-            </div>
-          </header>
-
-          <!-- Main -->
-          <main class="schedule-main">
-            <section class="schedule-section">
-              <h2 class="heading-2">일정</h2>
-
-              <div class="schedule-list">
-                <div class="schedule-item">
-                  <div class="schedule-bar"></div>
-
-                  <div class="schedule-content">
-                    <p class="schedule-item-title">공부</p>
-                    <span class="schedule-time">오후 2시 - 오후 5시</span>
-                  </div>
-
-                  <img
-                    src="assets/icons/study.png"
-                    alt=""
-                    class="schedule-thumb"
-                  />
-                </div>
-
-                <div class="schedule-item">
-                  <div class="schedule-bar"></div>
-
-                  <div class="schedule-content">
-                    <p class="schedule-item-title">단체모임</p>
-                    <span class="schedule-time">오후 6시 - 오후 8시</span>
-                  </div>
-
-                  <img
-                    src="assets/icons/meeting.png"
-                    alt=""
-                    class="schedule-thumb"
-                  />
-                </div>
-
-                <div class="schedule-item">
-                  <div class="schedule-bar"></div>
-
-                  <div class="schedule-content">
-                    <p class="schedule-item-title">술 약속</p>
-                    <span class="schedule-time">오후 9시 - 오후 11시</span>
-                  </div>
-
-                  <img
-                    src="assets/icons/meeting.png"
-                    alt=""
-                    class="schedule-thumb"
-                  />
-                </div>
-              </div>
+              <ul class="todo-list">
+                <li class="todo-item">
+                  <span class="todo-text">자료구조 강의 듣기</span>
+                </li>
+                <li class="todo-item">
+                  <span class="todo-text">와이어프레임 제작</span>
+                </li>
+                <li class="todo-item">
+                  <span class="todo-text">코딩 연습</span>
+                </li>
+              </ul>
             </section>
-          </main>
+          </aside>
+
+          <div class="schedule-content-area">
+            <!-- Header -->
+            <header class="schedule-home">
+              <div class="calendar-header">
+                <h1 class="calendar-title">9월 2026</h1>
+
+                <div class="calendar-nav">
+                  <button type="button" class="nav-btn" aria-label="이전 달">
+                    <img src="assets/icons/prev.svg" alt="" />
+                  </button>
+                  <button type="button" class="nav-btn" aria-label="다음 달">
+                    <img src="assets/icons/Next.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="calendar-week">
+                <span>일</span>
+                <span>월</span>
+                <span>화</span>
+                <span>수</span>
+                <span>목</span>
+                <span>금</span>
+                <span>토</span>
+              </div>
+
+              <div class="calendar-grid">
+                <span class="empty"></span>
+                <span class="empty"></span>
+
+                <button type="button" class="day">1</button>
+                <button type="button" class="day">2</button>
+                <button type="button" class="day">3</button>
+                <button type="button" class="day">4</button>
+                <button type="button" class="day">5</button>
+
+                <button type="button" class="day">6</button>
+                <button type="button" class="day">7</button>
+                <button type="button" class="day">8</button>
+                <button type="button" class="day">9</button>
+                <button type="button" class="day">10</button>
+                <button type="button" class="day">11</button>
+                <button type="button" class="day">12</button>
+
+                <button type="button" class="day">13</button>
+                <button type="button" class="day">14</button>
+                <button type="button" class="day">15</button>
+                <button type="button" class="day">16</button>
+                <button type="button" class="day">17</button>
+                <button type="button" class="day">18</button>
+                <button type="button" class="day">19</button>
+
+                <button type="button" class="day active">20</button>
+                <button type="button" class="day">21</button>
+                <button type="button" class="day">22</button>
+                <button type="button" class="day">23</button>
+                <button type="button" class="day">24</button>
+                <button type="button" class="day">25</button>
+                <button type="button" class="day">26</button>
+
+                <button type="button" class="day">27</button>
+                <button type="button" class="day">28</button>
+                <button type="button" class="day">29</button>
+                <button type="button" class="day">30</button>
+              </div>
+            </header>
+
+            <!-- Main -->
+            <main class="schedule-main">
+              <section class="schedule-section">
+                <h2 class="heading-2">일정</h2>
+
+                <div class="schedule-list">
+                  <div class="schedule-item">
+                    <div class="schedule-bar"></div>
+
+                    <div class="schedule-content">
+                      <p class="schedule-item-title">공부</p>
+                      <span class="schedule-time">오후 2시 - 오후 5시</span>
+                    </div>
+
+                    <img
+                      src="assets/icons/study.png"
+                      alt=""
+                      class="schedule-thumb"
+                    />
+                  </div>
+
+                  <div class="schedule-item">
+                    <div class="schedule-bar"></div>
+
+                    <div class="schedule-content">
+                      <p class="schedule-item-title">단체모임</p>
+                      <span class="schedule-time">오후 6시 - 오후 8시</span>
+                    </div>
+
+                    <img
+                      src="assets/icons/meeting.png"
+                      alt=""
+                      class="schedule-thumb"
+                    />
+                  </div>
+
+                  <div class="schedule-item">
+                    <div class="schedule-bar"></div>
+
+                    <div class="schedule-content">
+                      <p class="schedule-item-title">술 약속</p>
+                      <span class="schedule-time">오후 9시 - 오후 11시</span>
+                    </div>
+
+                    <img
+                      src="assets/icons/meeting.png"
+                      alt=""
+                      class="schedule-thumb"
+                    />
+                  </div>
+                </div>
+              </section>
+            </main>
+          </div>
 
           <!-- 플러스 버튼 -->
           <button
