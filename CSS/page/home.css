@@ -1,83 +1,84 @@
 /* Home.css */
 
+/* =========================
+   Home Layout
+========================= */
+
 .home {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
-  gap: 16px;
   flex-direction: column;
+  gap: 16px;
   padding-top: 24px;
+  /* padding-bottom: 80px; */
 }
 
-/* Header */
+/* =========================
+   Header
+========================= */
 
 .home-header {
   display: flex;
-  gap: 16px;
   flex-direction: column;
-}
-.home-header .title {
+  gap: 16px;
 }
 
-.home-header .progress-box {
+.progress-box {
   width: 100%;
   display: flex;
-  gap: 4px;
   flex-direction: column;
+  gap: 4px;
 }
 
-.progress-box .progress-text {
+.progress-text {
   display: flex;
-  gap: 2px;
   align-items: flex-end;
+  gap: 2px;
 }
 
-.progress-box .label {
+.progress-text .label,
+.progress-text .unit {
   font-size: 12px;
   font-weight: 400;
   line-height: 1;
   color: var(--gray-900);
 }
 
-.progress-box .percent {
+.progress-text .percent {
   font-size: 16px;
   font-weight: 700;
   line-height: 1;
   color: var(--purple-200);
 }
 
-.progress-box .unit {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1;
-  color: var(--gray-900);
-}
-
-.progress-box .progress-bar {
+.progress-bar {
   width: 100%;
   height: 14px;
   overflow: hidden;
+  border-radius: 4px;
   background-color: var(--purple-800);
-  border-radius: 4px;
 }
 
-.progress-box .progress-fill {
-  width: 90%;
+.progress-fill {
   height: 100%;
-  background-color: var(--purple-200);
   border-radius: 4px;
+  background-color: var(--purple-200);
 }
 
-/* Main */
+/* =========================
+   Main
+========================= */
 
 .home-main {
   display: flex;
-  gap: 16px;
-  flex: 1;
   flex-direction: column;
+  gap: 16px;
 }
 
-/* 상단 카드 영역 */
+/* =========================
+   Summary Cards
+========================= */
 
 .summary {
   display: flex;
@@ -86,42 +87,41 @@
 
 .d-day-card,
 .calendar-card {
-  min-height: 160px;
   flex: 1;
+  min-height: 160px;
   padding: 16px;
-  box-shadow: 0 2px 8px rgba(17, 24, 39, 0.12);
-  background-color: #fff;
   border-radius: 20px;
+  background-color: #fff;
+  box-shadow: var(--shadow-card);
 }
 
-/* D-day 카드 */
 .d-day-card {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .d-day-text {
   display: flex;
-  gap: 2px;
   flex-direction: column;
+  gap: 2px;
 }
 
-.d-day-card .d-day {
+.d-day {
   font-size: 28px;
   font-weight: 400;
   line-height: 1.2;
   color: var(--gray-900);
 }
 
-.d-day-card .d-day-date {
+.d-day-date {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4;
   color: var(--gray-400);
 }
 
-.d-day-card .birthday {
+.birthday {
   margin-top: 4px;
   font-size: 18px;
   font-weight: 600;
@@ -136,7 +136,6 @@
   object-fit: contain;
 }
 
-/* 달력 카드 */
 .calendar-card {
   display: flex;
   align-items: center;
@@ -150,13 +149,9 @@
   object-fit: contain;
 }
 
-/* 오늘 할 일 */
-
-.todo {
-  display: flex;
-  gap: 8px;
-  flex-direction: column;
-}
+/* =========================
+   Section Common
+========================= */
 
 .section-header {
   display: flex;
@@ -170,22 +165,31 @@
   object-fit: contain;
 }
 
+/* =========================
+   Todo
+========================= */
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .todo-list {
   display: flex;
-  gap: 12px;
   flex-direction: column;
+  gap: 12px;
 }
 
 .todo-item {
   height: 40px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 12px 16px;
-  box-shadow: 0 2px 8px rgba(17, 24, 39, 0.08);
-  background-color: #fff;
   border-radius: 12px;
+  background-color: #fff;
+  box-shadow: var(--shadow-card);
 }
 
 .todo-text {
@@ -202,46 +206,44 @@
   object-fit: contain;
 }
 
-/* 오늘 일정 */
+/* =========================
+   Schedule
+========================= */
 
 .schedule {
   display: flex;
-  gap: 8px;
   flex-direction: column;
+  gap: 8px;
 }
 
 .schedule-list {
   display: flex;
-  gap: 12px;
   flex-direction: column;
+  gap: 12px;
 }
 
 .schedule-item {
-  position: relative;
   height: 65px;
   display: flex;
-  gap: 8px;
   align-items: center;
-  padding: 8px 6px 8px 6px;
-  box-shadow: 0 2px 8px rgba(17, 24, 39, 0.08);
-  background-color: #fff;
-
+  gap: 8px;
+  padding: 8px 6px;
   border-radius: 16px;
+  background-color: #fff;
+  box-shadow: var(--shadow-card);
 }
 
-/* 왼쪽 파란 바 */
 .left-bar {
   width: 4px;
   height: 40px;
-  background-color: var(--purple-200);
+  flex-shrink: 0;
   border-radius: 4px;
+  background-color: var(--purple-200);
 }
 
-/* 텍스트 영역 */
 .schedule-content {
-  display: flex;
-  /* gap: 2px; */
   flex: 1;
+  display: flex;
   flex-direction: column;
 }
 
@@ -256,7 +258,6 @@
   color: var(--gray-500);
 }
 
-/* 오른쪽 이미지 */
 .schedule-img {
   width: 50px;
   height: 50px;
@@ -265,18 +266,19 @@
   object-fit: cover;
 }
 
-/* Footer */
+/* =========================
+   Footer / Bottom Nav
+========================= */
 
 .home-footer {
   width: calc(100% + 32px);
-
   height: 65px;
   margin-top: auto;
   margin-right: -16px;
   margin-left: -16px;
+  overflow: hidden;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  overflow: hidden;
   background-color: var(--purple-200);
 }
 
@@ -302,10 +304,8 @@
 .nav-icon {
   width: 28px;
   height: 28px;
-  display: block;
 }
 
-/* 활성 탭 밑줄 */
 .nav-item.active::after {
   content: "";
   position: absolute;
@@ -313,7 +313,88 @@
   left: 50%;
   width: 24px;
   height: 3px;
+  border-radius: 999px;
   background-color: #fff;
   transform: translateX(-50%);
-  border-radius: 999px;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media screen and (min-width: 768px) {
+  .home {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-top: 24px;
+  }
+
+  .home-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 16px;
+  }
+
+  .summary {
+    grid-column: 1 / -1;
+  }
+
+  .todo {
+    grid-column: 1 / 2;
+  }
+
+  .schedule {
+    grid-column: 2 / 3;
+  }
+
+  .d-day-card,
+  .calendar-card {
+    height: 160px;
+  }
+
+  .d-day-card {
+    position: relative;
+  }
+
+  .cake-img {
+    position: absolute;
+    right: 24px;
+    bottom: 16px;
+    width: 56px;
+  }
+
+  .home-footer {
+    width: calc(100% + 48px);
+    margin-right: -24px;
+    margin-left: -24px;
+  }
+}
+
+/* =========================
+   Desktop
+========================= */
+
+@media screen and (min-width: 1024px) {
+  .home {
+    max-width: 960px;
+    padding-top: 32px;
+  }
+
+  .d-day-card,
+  .calendar-card {
+    min-height: 200px;
+  }
+
+  .d-day {
+    font-size: 36px;
+  }
+
+  .cake-img {
+    width: 96px;
+  }
+
+  .home-footer {
+    display: none;
+  }
 }

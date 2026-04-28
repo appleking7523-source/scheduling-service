@@ -189,7 +189,7 @@
 
 .fab-btn {
   position: fixed;
-  right: 20px;
+  right: 24px;
   bottom: 88px;
   width: 56px;
   height: 56px;
@@ -371,3 +371,257 @@
   transform: translateX(-50%);
   border-radius: 999px;
 }
+
+/* 태블릿 */
+
+@media screen and (min-width: 768px) {
+  .todo {
+    max-width: 768px;
+    min-height: 885px;
+    margin: 0 auto;
+    padding: 24px 24px 0;
+  }
+
+  .todo-header {
+    gap: 56px;
+  }
+
+  .todo-top {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  .search-box {
+    width: 392px;
+    height: 40px;
+    justify-self: center;
+    padding: 0 24px;
+    border-radius: 999px;
+  }
+
+  .search-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .search-box input {
+    font-size: 14px;
+  }
+
+  .header-icons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .header-icons img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+
+  .todo-info {
+    display: grid;
+    grid-template-columns: 1fr 284px;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .todo-date {
+    gap: 6px;
+  }
+
+  .date-left {
+    font-size: 56px;
+  }
+
+  .date-right {
+    padding-top: 6px;
+  }
+
+  .date-day,
+  .date-year {
+    font-size: 16px;
+  }
+
+  .progress-card {
+    width: 248px;
+    height: 158px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(17, 24, 39, 0.12);
+  }
+
+  .progress-title {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gray-900);
+  }
+
+  .progress-content {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .progress-circle {
+    width: 92px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid var(--purple-200);
+    border-left-color: var(--purple-800);
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--gray-900);
+    border-width: 8px;
+  }
+
+  .progress-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .progress-text span {
+    font-size: 12px;
+    color: var(--gray-400);
+  }
+
+  .progress-text strong {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--purple-200);
+  }
+
+  .todo-main {
+    gap: 12px;
+    padding-bottom: 110px;
+  }
+
+  .todo-tab {
+    gap: 40px;
+    padding: 0;
+  }
+
+  .tab-btn {
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .todo-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filter-left {
+    display: flex;
+    gap: 18px;
+  }
+
+  .filter-btn,
+  .sort-btn {
+    height: 36px;
+    padding: 0 16px;
+    border: 0;
+    border-radius: 6px;
+    background-color: var(--gray-100);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gray-900);
+    cursor: pointer;
+  }
+
+  .filter-btn.active {
+    background-color: var(--purple-200);
+    color: #fff;
+  }
+
+  .sort-btn {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(17, 24, 39, 0.12);
+  }
+
+  .todo-list {
+    gap: 8px;
+  }
+
+  .todo-item {
+    min-height: 76px;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  .todo-bar {
+    width: 4px;
+    height: 56px;
+  }
+
+  .todo-title {
+    font-size: 18px;
+  }
+
+  .todo-time {
+    font-size: 15px;
+  }
+
+  .todo-check {
+    width: 20px;
+    height: 20px;
+  }
+
+  .fab-btn {
+    right: 24px;
+    bottom: 88px;
+  }
+
+  /* .fab-btn img {
+    width: 28px;
+    height: 28px;
+  } */
+
+  .todo-footer {
+    width: calc(100% + 48px);
+    height: 65px;
+    margin-left: -24px;
+    margin-right: -24px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+  }
+
+  /* .nav {
+    padding: 0 30px;
+  } */
+
+  .nav-item {
+    width: 40px;
+    padding-top: 14px;
+  }
+
+  .nav-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .nav-item.active::after {
+    bottom: 8px;
+    width: 24px;
+    height: 3px;
+  }
+
+  .container {
+    padding: 0;
+  }
+}
+
+/* 데스크탑 */

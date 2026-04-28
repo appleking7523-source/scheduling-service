@@ -95,24 +95,28 @@
 
 @media screen and (min-width: 1024px) {
   .layout {
+    min-height: 100vh;
+    display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .container {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .signup {
-    width: 100%;
-    max-width: 1200px;
-    min-height: 640px;
+    width: auto;
+    max-width: none;
+    min-height: auto;
     padding-top: 0;
     display: grid;
     grid-template-columns: 540px 360px;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
   }
 
   .signup-visual {
@@ -121,7 +125,7 @@
   }
 
   .signup-visual img {
-    width: 100%;
+    width: 540px;
     height: 620px;
     border-radius: 8px;
     object-fit: cover;
