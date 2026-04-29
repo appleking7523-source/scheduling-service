@@ -1,5 +1,9 @@
 /* Profile.css */
 
+/* =========================
+   Profile Layout
+========================= */
+
 .profile {
   width: 100%;
   min-height: 100vh;
@@ -12,10 +16,8 @@
 .profile-header {
   height: 50px;
   display: flex;
-  align-items: center;
   gap: 8px;
-  padding: 0 16px;
-  border-bottom: 1px solid #bdbdbd;
+  align-items: center;
   background-color: #f5f5f5;
 }
 
@@ -30,14 +32,14 @@
 .back-btn {
   width: 36px;
   height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   padding: 0;
   border: 0;
   background: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
-  flex-shrink: 0;
 }
 
 .back-btn img {
@@ -49,10 +51,10 @@
 /* Main */
 
 .profile-main {
-  flex: 1;
   display: flex;
-  flex-direction: column;
   gap: 16px;
+  flex: 1;
+  flex-direction: column;
   padding: 14px 0px 96px;
 }
 
@@ -60,8 +62,8 @@
 
 .profile-user {
   display: flex;
-  align-items: center;
   gap: 8px;
+  align-items: center;
   padding: 0 4px 16px;
   border-bottom: 1px solid #bdbdbd;
 }
@@ -69,17 +71,17 @@
 .avatar {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
   background: linear-gradient(135deg, #6b5df6, #63c7f7);
-  color: #fff;
   font-size: 48px;
   font-weight: 500;
   line-height: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  color: #fff;
+  border-radius: 50%;
 }
 
 .user-info {
@@ -105,18 +107,18 @@
 /* 카드 공통 */
 
 .profile-card {
-  background-color: #f8f8f8;
   border: 1px solid #bdbdbd;
-  border-radius: 12px;
   overflow: hidden;
+  background-color: #f8f8f8;
+  border-radius: 12px;
 }
 
 .profile-item,
 .profile-menu {
   min-height: 38px;
   display: flex;
-  align-items: center;
   gap: 10px;
+  align-items: center;
   padding: 12px 12px;
 }
 
@@ -157,13 +159,13 @@
   width: 100%;
   min-height: 42px;
   display: flex;
-  align-items: center;
   gap: 10px;
+  align-items: center;
   padding: 12px 12px;
   border: 1px solid #bdbdbd;
-  border-radius: 12px;
   background-color: #f8f8f8;
   cursor: pointer;
+  border-radius: 12px;
 }
 
 .logout-box img {
@@ -230,4 +232,29 @@
   background-color: #fff;
   transform: translateX(-50%);
   border-radius: 999px;
+}
+
+/* 태블릿 */
+
+@media screen and (min-width: 768px) {
+  .profile-footer {
+    width: calc(100% + 48px);
+    margin-right: -24px;
+    margin-left: -24px;
+  }
+}
+
+/* 데스크탑 */
+
+@media screen and (min-width: 1024px) {
+  .profile {
+    max-width: 768px;
+    margin: 0 auto;
+    max-width: 960px;
+    /* padding-top: 32px; */
+  }
+
+  .profile-footer {
+    display: none;
+  }
 }

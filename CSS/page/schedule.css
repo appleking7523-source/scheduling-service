@@ -1,4 +1,8 @@
-/* chedule.css */
+/* Schedule.css */
+
+/* =========================
+   Schedule Layout
+========================= */
 
 .schedule {
   width: 100%;
@@ -6,7 +10,6 @@
   display: flex;
   gap: 16px;
   flex-direction: column;
-  /* padding-top: 24px; */
 }
 
 .schedule-side {
@@ -304,16 +307,15 @@
 
 /* Footer */
 
-.home-footer {
+.schdule-footer {
   width: calc(100% + 32px);
-
   height: 65px;
   margin-top: auto;
   margin-right: -16px;
   margin-left: -16px;
+  overflow: hidden;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  overflow: hidden;
   background-color: var(--purple-200);
 }
 
@@ -339,10 +341,8 @@
 .nav-icon {
   width: 28px;
   height: 28px;
-  display: block;
 }
 
-/* 활성 탭 밑줄 */
 .nav-item.active::after {
   content: "";
   position: absolute;
@@ -350,12 +350,12 @@
   left: 50%;
   width: 24px;
   height: 3px;
+  border-radius: 999px;
   background-color: #fff;
   transform: translateX(-50%);
-  border-radius: 999px;
 }
 
-/* Tablet css*/
+/* 태블릿*/
 
 @media screen and (min-width: 768px) {
   .schedule {
@@ -381,7 +381,7 @@
     bottom: 88px;
   }
 
-  .home-footer {
+  .schdule-footer {
     width: calc(100% + 48px);
     margin-left: -24px;
     margin-right: -24px;
@@ -392,7 +392,7 @@
   }
 }
 
-/* Desktop css */
+/* 데스크탑 */
 
 @media screen and (min-width: 1024px) {
   .layout {
@@ -411,7 +411,7 @@
   .schedule {
     position: relative;
     width: 1024px;
-    max-width: none; /* 이게 핵심 */
+    max-width: none;
     min-height: 913px;
     margin: 0 auto;
     display: grid;
@@ -419,7 +419,6 @@
     column-gap: 40px;
     align-items: start;
     padding: 24px 40px;
-    background-color: #fff;
     box-sizing: border-box;
   }
 
@@ -430,65 +429,72 @@
   }
 
   .mini-calendar {
-    width: 280px;
-    height: 270px;
-    padding: 24px;
+    width: 290px;
+    height: 355px;
     background-color: #fff;
-    border-radius: 18px;
+    border-radius: 24px;
     box-shadow: 0 2px 8px rgba(17, 24, 39, 0.14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .mini-calendar .calendar-header {
-    margin-bottom: 24px;
+  /* 일정 박스 */
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .mini-calendar .calendar-header span {
-    font-size: 14px;
-    font-weight: 700;
-  }
-
-  .mini-calendar .calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    row-gap: 16px;
-    font-size: 13px;
-    text-align: center;
+  .section-arrow {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
   }
 
   .todo {
-    width: 280px;
     display: flex;
     flex-direction: column;
-    gap: 14px;
-    padding: 0;
+    gap: 8px;
   }
 
   .todo-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
   }
 
   .todo-item {
-    width: 100%;
-    height: 46px;
+    height: 40px;
     display: flex;
     align-items: center;
-    padding: 0 16px;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-radius: 12px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(17, 24, 39, 0.12);
+    box-shadow: var(--shadow-card);
   }
 
   .todo-text {
-    font-size: 13px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--gray-900);
+  }
+
+  .check-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    object-fit: contain;
   }
 
   .schedule-content-area {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
   }
 
   .schedule-home {
@@ -531,7 +537,7 @@
   }
 
   .schedule-list {
-    gap: 12px;
+    gap: 8px;
   }
 
   .schedule-item {
@@ -560,7 +566,7 @@
     border-radius: 8px;
   }
 
-  .home-footer {
+  .schdule-footer {
     display: none;
   }
 

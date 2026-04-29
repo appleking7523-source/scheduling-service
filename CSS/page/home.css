@@ -11,7 +11,6 @@
   flex-direction: column;
   gap: 16px;
   padding-top: 24px;
-  /* padding-bottom: 80px; */
 }
 
 /* =========================
@@ -22,6 +21,10 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.title-icon {
+  display: none;
 }
 
 .progress-box {
@@ -144,9 +147,8 @@
 }
 
 .calendar-img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 120px;
+  width: auto;
 }
 
 /* =========================
@@ -355,13 +357,14 @@
 
   .d-day-card {
     position: relative;
+    font-size: 44px;
   }
 
   .cake-img {
     position: absolute;
     right: 24px;
     bottom: 16px;
-    width: 56px;
+    width: 100px;
   }
 
   .home-footer {
@@ -379,6 +382,25 @@
   .home {
     max-width: 960px;
     padding-top: 32px;
+  }
+
+  .title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .title-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
   }
 
   .d-day-card,
