@@ -1,10 +1,14 @@
 /* Todo.css */
 
+/* =========================
+   Todo Layout
+========================= */
+
 .todo {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  gap: 16px;
+  gap: 60px;
   flex-direction: column;
   padding-top: 40px;
 }
@@ -13,7 +17,7 @@
 
 .todo-header {
   display: flex;
-  gap: 24px;
+  gap: 60px;
   flex-direction: column;
 }
 
@@ -84,6 +88,14 @@
   color: var(--gray-900);
 }
 
+.progress-card {
+  display: none;
+}
+
+.header-icons {
+  display: none;
+}
+
 /* Main */
 
 .todo-main {
@@ -97,9 +109,6 @@
 .todo-tab {
   display: flex;
   gap: 32px;
-  justify-content: flex-start;
-  padding: 0 4px;
-  border-bottom: 1px solid var(--gray-200);
 }
 
 .tab-btn {
@@ -185,11 +194,15 @@
   object-fit: contain;
 }
 
+.todo-filter {
+  display: none;
+}
+
 /* 플로팅 버튼 */
 
 .fab-btn {
   position: fixed;
-  right: 24px;
+  right: 20px;
   bottom: 88px;
   width: 56px;
   height: 56px;
@@ -409,18 +422,6 @@
     font-size: 14px;
   }
 
-  .header-icons {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-  }
-
-  .header-icons img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-  }
-
   .todo-info {
     display: grid;
     grid-template-columns: 1fr 284px;
@@ -591,12 +592,15 @@
   } */
 
   .todo-footer {
-    width: calc(100% + 48px);
+    width: calc(100% + 32px);
     height: 65px;
-    margin-left: -24px;
-    margin-right: -24px;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
+    margin-top: auto;
+    margin-right: -16px;
+    margin-left: -16px;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color: var(--purple-200);
   }
 
   /* .nav {
@@ -625,3 +629,64 @@
 }
 
 /* 데스크탑 */
+
+@media screen and (min-width: 1024px) {
+  /* Todo */
+  .todo {
+    position: relative;
+    width: 1024px;
+    max-width: none;
+    min-height: 913px;
+    margin: 0 auto;
+    padding: 40px 40px;
+    box-sizing: border-box;
+  }
+
+  /* 데스크탑 헤더 */
+
+  .header-icons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .header-icons img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* 푸터 */
+
+  .todo-footer {
+    display: none;
+  }
+
+  .fab-btn {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+
+    /* 모양 변경 핵심 */
+    width: auto;
+    height: 36px;
+    padding: 0 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 6px; /* 원 → 직사각형 */
+  }
+
+  .fab-btn::before {
+    content: "추가하기";
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .fab-btn img {
+    width: 18px;
+    height: 18px;
+  }
+}

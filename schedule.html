@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>오늘 일정 페이지</title>
+    <title>일정 화면 페이지</title>
 
     <link rel="stylesheet" href="CSS/basic.css" />
     <link rel="stylesheet" href="CSS/page/schedule.css" />
@@ -16,14 +16,7 @@
           <aside class="schedule-side">
             <!-- 작은 달력 카드 -->
             <div class="mini-calendar">
-              <div class="calendar-header">
-                <span>9월 2026</span>
-              </div>
-
-              <div class="calendar-grid">
-                <span>1</span><span>2</span><span>3</span> <span>4</span
-                ><span>5</span>
-              </div>
+              <img src="assets/icons/big_calendar.png" alt="" />
             </div>
 
             <!-- 오늘 할 일 -->
@@ -166,7 +159,7 @@
             </main>
           </div>
 
-          <!-- 플러스 버튼 -->
+          <!-- Plus btn -->
           <button
             type="button"
             class="fab-btn"
@@ -176,7 +169,7 @@
             <img src="assets/icons/puls.svg" alt="" />
           </button>
 
-          <!-- 일정 추가 모달 -->
+          <!-- Modal -->
           <div class="modal-overlay" id="scheduleModal">
             <div class="schedule-modal">
               <button
@@ -225,10 +218,11 @@
           </div>
 
           <!-- Footer -->
-          <footer class="home-footer">
+          <footer class="schdule-footer">
             <nav class="nav">
               <a href="home.html" class="nav-item" aria-label="홈">
                 <img src="assets/icons/home.svg" alt="" class="nav-icon" />
+                <span class="nav-indicator"></span>
               </a>
 
               <a
@@ -243,7 +237,7 @@
                 <img src="assets/icons/todo.svg" alt="" class="nav-icon" />
               </a>
 
-              <a href="profile.html" class="nav-item" aria-label="마이페이지">
+              <a href="profile.html" class="nav-item" aria-label="프로필">
                 <img src="assets/icons/user.svg" alt="" class="nav-icon" />
               </a>
             </nav>
