@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What To Do 포트폴리오</title>
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <main class="deck">
+      <section class="slide cover">
+        <div class="cover-copy">
+          <p class="eyebrow">UI/UX Portfolio</p>
+          <h1>What To Do</h1>
+          <p class="lead">오늘의 일정과 할 일을 한눈에 정리하는 서비스</p>
+          <div class="meta">
+            <span>Responsive Web</span>
+            <span>HTML/CSS Prototype</span>
+            <span>2026</span>
+          </div>
+        </div>
+        <div class="hero-device">
+          <div class="phone-screen">
+            <div class="status-line"></div>
+            <h2>오늘 뭐할까?</h2>
+            <p>2026년 9월 20일</p>
+            <div class="progress"><span></span></div>
+            <div class="summary-row">
+              <div>
+                <strong>D-22</strong>
+                <small>생일</small>
+              </div>
+              <img src="../assets/icons/cake.png" alt="" />
+            </div>
+            <div class="list-card">
+              <b>오늘 할 일</b>
+              <span>자료구조 강의 듣기</span>
+              <span>코딩 연습</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="section-title">
+          <p class="eyebrow">Problem Definition</p>
+          <h2>문제정의</h2>
+        </div>
+        <div class="two-column">
+          <div>
+            <h3>흩어진 일정은 오늘의 판단을 늦춘다</h3>
+            <p>
+              학생 사용자는 수업, 과제, 모임, 개인 루틴을 동시에 관리하지만 일정과 할 일이
+              여러 도구에 분산되어 있다. 그래서 앱을 열어도 오늘 무엇을 먼저 해야 하는지
+              빠르게 판단하기 어렵다.
+            </p>
+          </div>
+          <div class="problem-grid">
+            <article>
+              <strong>분리된 정보</strong>
+              <span>시간표와 체크리스트가 따로 존재</span>
+            </article>
+            <article>
+              <strong>약한 성취감</strong>
+              <span>완료한 일과 남은 일이 직관적으로 보이지 않음</span>
+            </article>
+            <article>
+              <strong>입력 부담</strong>
+              <span>관리 도구가 복잡하면 기록 자체를 미룸</span>
+            </article>
+            <article>
+              <strong>다른 사용 맥락</strong>
+              <span>모바일은 빠른 확인, 데스크톱은 넓은 탐색이 필요</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide statement">
+        <p class="eyebrow">Core Problem</p>
+        <h2>
+          일정과 할 일이 분리되어 있어<br />
+          오늘의 진행 상황과 다음 행동을<br />
+          빠르게 판단하기 어렵다.
+        </h2>
+        <div class="solution-strip">
+          <span>오늘 중심 홈</span>
+          <span>진행률 표시</span>
+          <span>캘린더+리스트</span>
+          <span>반응형 레이아웃</span>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="section-title">
+          <p class="eyebrow">Hypothesis</p>
+          <h2>가설</h2>
+        </div>
+        <div class="hypothesis">
+          <article>
+            <span>01</span>
+            <h3>오늘 중심 요약 화면은 진입 부담을 줄인다</h3>
+            <p>앱 진입 직후 오늘의 할 일, 일정, 진행률을 보면 별도 탐색 없이 다음 행동을 결정할 수 있다.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>진행률 시각화는 완료 행동을 강화한다</h3>
+            <p>완료 수와 퍼센트를 함께 보여주면 사용자는 남은 작업량과 성취감을 동시에 인식한다.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>일정과 할 일을 연결하면 관리 효율이 높아진다</h3>
+            <p>화면 역할은 분리하되 홈에서 전체 맥락을 연결하면 목적에 맞게 빠르게 이동할 수 있다.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>반응형 구조는 사용 맥락을 넓힌다</h3>
+            <p>모바일의 빠른 확인과 데스크톱의 넓은 탐색을 함께 제공해 같은 경험을 유지한다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide concept">
+        <div>
+          <p class="eyebrow">Design Concept</p>
+          <h2>Light Productivity</h2>
+          <p>
+            부담스럽지 않게 하루를 정리하는 생산성 도구. 기능을 많이 보여주기보다 사용자가
+            지금 해야 할 일을 명확히 확인하도록 설계했다.
+          </p>
+        </div>
+        <div class="concept-board">
+          <div class="palette blue"></div>
+          <div class="palette green"></div>
+          <div class="palette amber"></div>
+          <div class="palette gray"></div>
+          <ul>
+            <li>Today First: 하루 계획을 먼저 보여주기</li>
+            <li>Clear Status: 완료와 진행 상태를 선명하게 표현</li>
+            <li>Responsive Routine: 화면 크기에 맞는 정보 밀도</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="slide flow">
+        <div class="section-title">
+          <p class="eyebrow">Structure</p>
+          <h2>정보구조와 사용자 흐름</h2>
+        </div>
+        <div class="flow-line">
+          <article>
+            <img src="../assets/icons/onbo1.svg" alt="" />
+            <strong>온보딩</strong>
+            <span>서비스 가치 이해</span>
+          </article>
+          <article>
+            <img src="../assets/icons/email.svg" alt="" />
+            <strong>로그인</strong>
+            <span>계정 진입</span>
+          </article>
+          <article>
+            <img src="../assets/icons/home.svg" alt="" />
+            <strong>홈</strong>
+            <span>오늘 요약</span>
+          </article>
+          <article>
+            <img src="../assets/icons/schedule.svg" alt="" />
+            <strong>일정</strong>
+            <span>날짜별 일정 확인</span>
+          </article>
+          <article>
+            <img src="../assets/icons/todo.svg" alt="" />
+            <strong>할 일</strong>
+            <span>상태별 작업 관리</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide screen-slide">
+        <div class="screen-copy">
+          <p class="eyebrow">Screen 01</p>
+          <h2>홈</h2>
+          <p>오늘 할 일, 일정, 진행률, D-day를 한 화면에 모아 앱을 열자마자 하루 상태를 파악하게 했다.</p>
+          <ul>
+            <li>상단 진행률로 오늘의 완료 상태 확인</li>
+            <li>카드형 요약으로 D-day와 캘린더 정보 분리</li>
+            <li>할 일과 일정 섹션에서 상세 화면으로 이동</li>
+          </ul>
+        </div>
+        <div class="mockup home-mock">
+          <h3>오늘 뭐할까?</h3>
+          <p>하루 진행률 <b>90%</b></p>
+          <div class="bar"><span></span></div>
+          <div class="mini-cards">
+            <div><strong>D-22</strong><small>생일</small></div>
+            <div><img src="../assets/icons/calendar.png" alt="" /></div>
+          </div>
+          <div class="todo-lines"><span></span><span></span><span></span></div>
+        </div>
+      </section>
+
+      <section class="slide screen-slide alt">
+        <div class="screen-copy">
+          <p class="eyebrow">Screen 02</p>
+          <h2>일정</h2>
+          <p>월간 캘린더와 선택 날짜의 일정 리스트를 함께 제공해 날짜 탐색과 세부 확인을 연결했다.</p>
+          <ul>
+            <li>강조된 날짜로 현재 선택 상태 표시</li>
+            <li>일정 카드에 시간, 제목, 이미지 썸네일 제공</li>
+            <li>플로팅 버튼으로 일정 추가 행동 고정</li>
+          </ul>
+        </div>
+        <div class="mockup calendar-mock">
+          <div class="calendar-head"><b>9월 2026</b><span>‹ ›</span></div>
+          <div class="week">
+            <span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
+          </div>
+          <div class="days">
+            <span></span><span></span><b>1</b><b>2</b><b>3</b><b>4</b><b>5</b>
+            <b>6</b><b>7</b><b>8</b><b>9</b><b>10</b><b>11</b><b>12</b>
+            <b>13</b><b>14</b><b>15</b><b>16</b><b>17</b><b>18</b><b>19</b>
+            <b class="active">20</b><b>21</b><b>22</b><b>23</b><b>24</b><b>25</b><b>26</b>
+          </div>
+          <div class="schedule-row"><i></i><span>공부<br /><small>오후 2시 - 5시</small></span></div>
+          <div class="schedule-row"><i></i><span>단체 모임<br /><small>오후 6시 - 8시</small></span></div>
+        </div>
+      </section>
+
+      <section class="slide screen-slide">
+        <div class="screen-copy">
+          <p class="eyebrow">Screen 03</p>
+          <h2>할 일</h2>
+          <p>검색, 기간 탭, 상태 필터, 완료 체크를 배치해 사용자가 남은 작업을 빠르게 좁혀 볼 수 있게 했다.</p>
+          <ul>
+            <li>오늘, 이번 주, 이번 달 단위로 범위 전환</li>
+            <li>전체, 진행 중, 완료 상태 필터 제공</li>
+            <li>완료 아이콘으로 체크리스트 경험 강화</li>
+          </ul>
+        </div>
+        <div class="mockup todo-mock">
+          <div class="search">검색</div>
+          <div class="date-card"><strong>9월 20일</strong><span>2/3 완료</span></div>
+          <div class="chips"><b>오늘</b><span>이번 주</span><span>이번 달</span></div>
+          <div class="task done">자료구조 강의 듣기<img src="../assets/icons/check-in.svg" alt="" /></div>
+          <div class="task done">다이어리 작성<img src="../assets/icons/check-in.svg" alt="" /></div>
+          <div class="task">코딩 연습<img src="../assets/icons/check-out.svg" alt="" /></div>
+        </div>
+      </section>
+
+      <section class="slide screen-slide alt">
+        <div class="screen-copy">
+          <p class="eyebrow">Screen 04</p>
+          <h2>로그인과 프로필</h2>
+          <p>계정 진입과 개인 상태 확인 화면을 제공해 서비스 시작과 마무리 흐름을 완성했다.</p>
+          <ul>
+            <li>이메일 로그인과 소셜 로그인 진입점 제공</li>
+            <li>프로필에서 진행률과 완료 수 확인</li>
+            <li>공지, 문의, 설정, 로그아웃 기능 배치</li>
+          </ul>
+        </div>
+        <div class="dual-mock">
+          <div class="small-screen">
+            <h3>로그인</h3>
+            <span>whattodo@gmail.com</span>
+            <span>비밀번호 입력</span>
+            <b>로그인</b>
+          </div>
+          <div class="small-screen profile-card">
+            <h3>프로필</h3>
+            <div class="avatar">홍</div>
+            <span>하루 진행률 90%</span>
+            <span>완료한 할 일 12개</span>
+            <b>로그아웃</b>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide responsive">
+        <div class="section-title">
+          <p class="eyebrow">Responsive Design</p>
+          <h2>화면 크기에 따라 정보 밀도를 조절</h2>
+        </div>
+        <div class="responsive-grid">
+          <article>
+            <strong>Mobile</strong>
+            <p>하단 내비게이션과 플로팅 추가 버튼을 사용해 엄지손가락 중심의 빠른 확인과 입력을 지원한다.</p>
+          </article>
+          <article>
+            <strong>Tablet</strong>
+            <p>홈 화면의 요약 카드와 리스트를 2열로 배치해 정보량을 늘리면서도 읽는 순서를 유지한다.</p>
+          </article>
+          <article>
+            <strong>Desktop</strong>
+            <p>일정 화면에서 사이드 정보와 캘린더를 나란히 배치해 날짜 탐색과 할 일 확인을 동시에 처리한다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide result">
+        <p class="eyebrow">Result & Next Step</p>
+        <h2>결과 및 개선 방향</h2>
+        <div class="result-grid">
+          <article>
+            <strong>구현 결과</strong>
+            <p>온보딩부터 홈, 일정, 할 일, 프로필까지 핵심 서비스 흐름을 HTML/CSS 기반 반응형 프로토타입으로 구현했다.</p>
+          </article>
+          <article>
+            <strong>개선 방향</strong>
+            <p>실제 데이터 저장, 날짜 선택 로직, 일정 반복, 알림, 접근성 레이블 정리로 실사용 완성도를 높일 수 있다.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
